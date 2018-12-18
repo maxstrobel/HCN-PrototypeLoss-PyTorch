@@ -3,7 +3,7 @@
 **Hierarchical Co-occurrence Network** from *Co-occurrence Feature Learning from Skeleton Data for Action Recognition and Detection with Hierarchical Aggregation*
 [[Arxiv Preprint]](https://arxiv.org/abs/1804.06055)
 
-**Prototype loss training procedure** from *Prototypical Networks for Few-shot Learning* https://arxiv.org/abs/1703.05175)
+**Prototype loss training procedure** from *Prototypical Networks for Few-shot Learning* [[Arxiv Preprint]](https://arxiv.org/abs/1703.05175)
 
 ### Contributions
 1) PyTorch reimplementation of **Hierarchical Co-occurrence Network (HCN)** 
