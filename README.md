@@ -11,7 +11,7 @@ Contributions:
 3) Experiments showing that training with prototype loss can **improve the over all accuracy**
 
 
-software architecture inspired by:
+Software architecture inspired by:
    *  https://github.com/yysijie/st-gcn
    *  https://github.com/huguyuehuhu/HCN-pytorch
    *  https://github.com/jakesnell/prototypical-networks
@@ -54,78 +54,6 @@ $ python run_protonet.py -c config/ProtoNet.yaml --use_gpu -w work_dir/Prototype
 ##### Command line help
 ```commandline
 $ python run_hcn.py --help
-usage: run_hcn.py [-h] [-w WORK_DIR] [-c CONFIG] [--use_gpu] [--debug]
-                  [--phase PHASE] [--save_result] [--start_epoch START_EPOCH]
-                  [--num_epoch NUM_EPOCH] [--device DEVICE [DEVICE ...]]
-                  [--log_interval LOG_INTERVAL]
-                  [--save_interval SAVE_INTERVAL]
-                  [--eval_interval EVAL_INTERVAL] [--save_log] [--print_log]
-                  [--show_topk SHOW_TOPK [SHOW_TOPK ...]] [--model MODEL]
-                  [--model_args MODEL_ARGS] [--weights WEIGHTS]
-                  [--ignore_weights IGNORE_WEIGHTS [IGNORE_WEIGHTS ...]]
-                  [--loss LOSS] [--optimizer OPTIMIZER]
-                  [--optimizer_args OPTIMIZER_ARGS] [--scheduler SCHEDULER]
-                  [--scheduler_args SCHEDULER_ARGS] [--feeder FEEDER]
-                  [--train_feeder_args TRAIN_FEEDER_ARGS]
-                  [--test_feeder_args TEST_FEEDER_ARGS]
-                  [--train_batch_size TRAIN_BATCH_SIZE]
-                  [--test_batch_size TEST_BATCH_SIZE]
-                  [--num_worker NUM_WORKER]
-
-Processor
-
-optional arguments:
-  -h, --help            show this help message and exit
-  -w WORK_DIR, --work_dir WORK_DIR
-                        the work folder for storing results
-  -c CONFIG, --config CONFIG
-                        path to the configuration file
-  --use_gpu             use GPUs or not
-  --debug               less data, faster loading
-  --phase PHASE         train or test
-  --save_result         save output of model
-  --start_epoch START_EPOCH
-                        start training from which epoch
-  --num_epoch NUM_EPOCH
-                        stop training in which epoch
-  --device DEVICE [DEVICE ...]
-                        indexes of GPUs for training or testing
-  --log_interval LOG_INTERVAL
-                        interval for printing messages (#iteration)
-  --save_interval SAVE_INTERVAL
-                        interval for storing models (#iteration)
-  --eval_interval EVAL_INTERVAL
-                        interval for evaluating models (#iteration)
-  --save_log            save logging or not
-  --print_log           print logging or not
-  --show_topk SHOW_TOPK [SHOW_TOPK ...]
-                        show top-k accuracies
-  --model MODEL         type of model
-  --model_args MODEL_ARGS
-                        arguments for model
-  --weights WEIGHTS     weights for model initialization
-  --ignore_weights IGNORE_WEIGHTS [IGNORE_WEIGHTS ...]
-                        ignored weights during initialization
-  --loss LOSS           type of loss function
-  --optimizer OPTIMIZER
-                        type of optimizer
-  --optimizer_args OPTIMIZER_ARGS
-                        arguments for optimizer
-  --scheduler SCHEDULER
-                        type of scheduler
-  --scheduler_args SCHEDULER_ARGS
-                        arguments for scheduler
-  --feeder FEEDER       type of data loader
-  --train_feeder_args TRAIN_FEEDER_ARGS
-                        arguments for training data loader
-  --test_feeder_args TEST_FEEDER_ARGS
-                        arguments for test data loader
-  --train_batch_size TRAIN_BATCH_SIZE
-                        batch size for training
-  --test_batch_size TEST_BATCH_SIZE
-                        batch size for test
-  --num_worker NUM_WORKER
-                        number of workers per gpu for data loader
 ```
 
 
