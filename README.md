@@ -35,8 +35,6 @@ To transform raw NTU RGB+D data into numpy array (memmap format ) by this comman
 python ./tools/ntu_gendata.py --data_path ./data/NTU-RGB-D/nturgb+d_skeletons --out_folder 'data/NTU-RGB-D'  # default setting
 python ./tools/ntu_gendata.py --data_path <path for raw skeleton dataset> --out_folder <path for new dataset>  # custom setting
 ```
-##### Other Datasets
-Not supported now.
 
 ### Training
 Experiments can be configured via configuration files (```./config```) or via command line.
