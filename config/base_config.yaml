@@ -1,0 +1,35 @@
+# Minimal config
+
+work_dir:
+
+num_epoch:
+
+# feeder
+feeder:
+train_feeder_args:
+  data_path:
+  label_path:
+test_feeder_args:
+  data_path:
+  label_path:
+train_batch_size:
+test_batch_size:
+
+# model
+model:
+model_args:
+
+loss:
+
+# optim
+optimizer:
+optimizer_args:
+  lr:
+
+# scheduler - optional
+scheduler:
+scheduler_args:
+
+
+
+
