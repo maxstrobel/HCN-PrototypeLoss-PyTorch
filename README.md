@@ -5,7 +5,7 @@
 
 **Prototype loss training procedure** from *Prototypical Networks for Few-shot Learning* https://arxiv.org/abs/1703.05175)
 
-Contributions:
+### Contributions
 1) PyTorch reimplementation of **Hierarchical Co-occurrence Network (HCN)** 
 2) Application of **Prototype loss** during training of HCN
 3) Experiments showing that training with prototype loss can **improve the over all accuracy**
