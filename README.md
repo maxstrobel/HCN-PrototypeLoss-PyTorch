@@ -60,11 +60,17 @@ $ python run_hcn.py --help
  ```commandline
  $ tensorboard --logdir ./work_dir
  ```
-|                | Vanilla HCN | Prototype HCN |
-| -------------- |  ---------- | ------------- |
-| Accuracy       | 88.12 %     | **90.55 %**   |
-| Top-2 accuracy | 94.91 %     | **96.98 %**   |
-| Top-5 accuracy | 98.44 %     | **99.31 %**   |
+| **Prototype HCN @ 200 Epochs** | Cross-View  | Cross-Subject |
+| ------------------------------ |  ---------- | ------------- |
+| Accuracy       |  TODO %     | TODO %   |
+| Top-2 accuracy |  TODO %     | TODO %   |
+| Top-5 accuracy |  TODO %     | TODO %   |
+
+|  Vanilla HCN @ 200 Epochs | Cross-View  | Cross-Subject |
+| ------------------------- |  ---------- | ------------- |
+| Accuracy                  | 89.5  %     | 83.8 %        |
+| Top-2 accuracy            | 95.65 %     | 91.7 %        |
+| Top-5 accuracy            | 98.79 %     | 97.2 %        |
 
  
 ![Screenshot TensorBoard][tensorboard]
