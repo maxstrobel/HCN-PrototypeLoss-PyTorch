@@ -8,7 +8,7 @@
 ### Contributions
 1) PyTorch reimplementation of **Hierarchical Co-occurrence Network (HCN)** 
 2) Application of **Prototype loss** during training of HCN
-3) Experiments showing that training with prototype loss can **improve the over all accuracy**
+3) Experiments showing that training with prototype loss can **achieve similar accuracy**
 
 
 Software architecture inspired by:
@@ -60,11 +60,14 @@ $ python run_hcn.py --help
  ```commandline
  $ tensorboard --logdir ./work_dir
  ```
-| **Prototype HCN @ 200 Epochs** | Cross-View  | Cross-Subject |
+ 
+ We did **no parameter tuning** to improve the results of Prototype HCN compared to Vanilla HCN.
+ 
+| **Prototype HCN @ 100 Epochs** | Cross-View  | Cross-Subject |
 | ------------------------------ |  ---------- | ------------- |
-| Accuracy       |  TODO %     | TODO %   |
-| Top-2 accuracy |  TODO %     | TODO %   |
-| Top-5 accuracy |  TODO %     | TODO %   |
+| Accuracy       |  87.0 %     | 82.2 %   |
+| Top-2 accuracy |  94.0 %     | 90.6 %   |
+| Top-5 accuracy |  98.0 %     | 96.3 %   |
 
 |  Vanilla HCN @ 200 Epochs | Cross-View  | Cross-Subject |
 | ------------------------- |  ---------- | ------------- |

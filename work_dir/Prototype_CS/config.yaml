@@ -1,0 +1,59 @@
+# command line: run_protonet.py -c ./config/ProtoNet_CS.yaml --use_gpu -w work_dir/Prototype_CS
+
+config: ./config/ProtoNet_CS.yaml
+debug: false
+device: 0
+eval_interval: 5
+feeder: feeder.feeder_hcn.FeederHCN
+ignore_weights: []
+log_interval: 100
+loss: processor.processor_protonet.PrototypeLoss
+model: model.hcn.Model
+model_args:
+    in_channels: 3
+    num_class: 32
+num_epoch: 100
+num_worker: 4
+optimizer: torch.optim.Adam
+optimizer_args:
+    lr: 0.001
+    weight_decay: 0.0001
+phase: train
+print_log: true
+sampler: feeder.sampler_protonet.SamplerProtoNet
+save_interval: 10
+save_log: true
+save_result: false
+scheduler: torch.optim.lr_scheduler.ExponentialLR
+scheduler_args:
+    gamma: 0.999
+show_topk:
+- 1
+- 2
+- 5
+start_epoch: 0
+test_batch_size: 256
+test_feeder_args:
+    action_classes: 60
+    data_path: ./data/NTU-RGB-D/xsub/val_data.npy
+    label_path: ./data/NTU-RGB-D/xsub/val_label.pkl
+    meta_path: ./data/NTU-RGB-D/xsub/val_num_frame.npy
+test_sampler_args:
+    num_classes: 60
+    num_episodes: 100
+    num_query: 20
+    num_support: 20
+train_batch_size: 256
+train_feeder_args:
+    action_classes: 60
+    data_path: ./data/NTU-RGB-D/xsub/train_data.npy
+    label_path: ./data/NTU-RGB-D/xsub/train_label.pkl
+    meta_path: ./data/NTU-RGB-D/xsub/train_num_frame.npy
+train_sampler_args:
+    num_classes: 60
+    num_episodes: 100
+    num_query: 20
+    num_support: 20
+use_gpu: true
+weights: null
+work_dir: work_dir/Prototype_CS
